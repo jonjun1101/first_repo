@@ -14,7 +14,7 @@ offset = st.number_input("Offset voltage:", value=0.0)
 
 
 # Perform the conversion
-contrast = ((max - offset) + (min - offset)) / ((max - offset) - (min - offset))
+contrast = ((max - offset) - (min - offset)) / ((max - offset) + (min - offset))
 
 # Display the result
 st.write(f"The equivalent temperature in Fahrenheit is: **{contrast:.2f}**")
