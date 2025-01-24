@@ -2,19 +2,22 @@
 import streamlit as st
 
 # Title of the app
-st.title("Homodyne Contrast")
+st.title("Calculate Homodyne Contrast")
 
 # Header
-st.header("Convert Celsius to Fahrenheit")
+#st.header("header")
 
-# Input widget to get Celsius temperature from the user
-celsius = st.number_input("Enter temperature in Celsius:", min_value=-100.0, max_value=100.0, value=0.0)
+# Input voltages
+maximum = st.number_input("Max voltage:", value=0.0)
+minimum = st.number_input("Min voltage:", value=0.0)
+offset = st.number_input("Offset voltage:", value=0.0)
+
 
 # Perform the conversion
-fahrenheit = celsius * 9/5 + 32
+contrast = ((max - offset) + (min - offset)) / ((max - offset) - (min - offset))
 
 # Display the result
-st.write(f"The equivalent temperature in Fahrenheit is: **{fahrenheit:.2f}°F**")
+st.write(f"The equivalent temperature in Fahrenheit is: **{contrast:.2f}°F**")
 
 # Add an optional slider for fun
 st.subheader("Play around with the Celsius slider")
