@@ -17,7 +17,7 @@ offset = st.number_input("Offset voltage:", value=0.0)
 contrast = ((max - offset) + (min - offset)) / ((max - offset) - (min - offset))
 
 # Display the result
-st.write(f"The equivalent temperature in Fahrenheit is: **{contrast:.2f}°F**")
+st.write(f"The equivalent temperature in Fahrenheit is: **{contrast:.2f}**")
 
 # Add an optional slider for fun
 #st.subheader("Play around with the Celsius slider")
