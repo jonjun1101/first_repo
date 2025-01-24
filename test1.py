@@ -2,7 +2,7 @@
 import streamlit as st
 
 # Title of the app
-st.title("Temperature Converter")
+st.title("Homodyne Contrast")
 
 # Header
 st.header("Convert Celsius to Fahrenheit")
