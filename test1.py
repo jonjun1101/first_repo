@@ -8,8 +8,8 @@ st.title("Calculate Homodyne Contrast")
 #st.header("header")
 
 # Input voltages
-maximum = st.number_input("Max voltage:", value=0.0)
-minimum = st.number_input("Min voltage:", value=0.0)
+max = st.number_input("Max voltage:", value=0.0)
+min = st.number_input("Min voltage:", value=0.0)
 offset = st.number_input("Offset voltage:", value=0.0)
 
 
